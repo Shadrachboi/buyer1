@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flat Hat Rags - Handmade Western Designs</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#8B4513',secondary:'#DAA520'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #fcfcfa;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-section {
+            background-image: url('https://public.readdy.ai/ai/img_res/efafbdbc034cb8565d21e770a193b72f.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .rope-border {
+            position: relative;
+        }
+        .rope-border::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0,5 C20,0 30,10 50,5 C70,0 80,10 100,5" fill="none" stroke="%238B4513" stroke-width="2"/></svg>');
+            background-repeat: repeat-x;
+        }
+        .custom-input {
+            border: 2px solid #8B4513;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .custom-input:focus {
+            border-color: #DAA520;
+            outline: none;
+        }
+        .custom-button {
+            background-color: #8B4513;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .custom-button:hover {
+            background-color: #6a340f;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-3xl font-['Pacifico'] text-primary">Flat Hat Rags</a>
+            
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="font-medium hover:text-primary transition-colors">Home</a>
+                <a href="#" class="font-medium hover:text-primary transition-colors">Shop</a>
+                <a href="#" class="font-medium hover:text-primary transition-colors">Designs</a>
+                <a href="#" class="font-medium hover:text-primary transition-colors">Custom Orders</a>
+                <a href="#" class="font-medium hover:text-primary transition-colors">Events</a>
+                <a href="#" class="font-medium hover:text-primary transition-colors">About Us</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <input type="text" placeholder="Search..." class="py-1 pl-8 pr-2 rounded-full border-2 border-gray-300 focus:border-primary focus:outline-none w-32 md:w-40 text-sm">
+                    <div class="absolute left-2 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-500">
+                        <i class="ri-search-line"></i>
+                    </div>
+                </div>
+                
+                <div class="relative w-8 h-8 flex items-center justify-center">
+                    <i class="ri-shopping-cart-2-line text-xl"></i>
+                    <span class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                </div>
+                
+                <button class="md:hidden w-8 h-8 flex items-center justify-center">
+                    <i class="ri-menu-line text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section pt-24 md:pt-32 relative">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="container mx-auto px-4 py-20 md:py-32 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">One of a Kind Designs & Superior Quality</h1>
+                <p class="text-lg md:text-xl text-white mb-8 leading-relaxed">Flat Hat Rags brings you exclusive, hand-drawn art across many mediums—embroidery, heat transfer, wood burning, vinyl decals, and more. We specialize in premium, handmade wild rags available in a wide selection of prints and sizes—from youth scarves to the largest show-ready pieces available.</p>
+                <button class="custom-button px-8 py-3 text-lg font-semibold rounded-button !rounded-button whitespace-nowrap">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Collections</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Category 1 -->
+                <div class="group relative overflow-hidden rounded shadow-lg h-64">
+                    <div style="background-image: url('https://public.readdy.ai/ai/img_res/caa6fd94cbbd35bca37781cbb16952a3.jpg');" class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 ease-in-out"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-white mb-2">Wild Rags</h3>
+                            <a href="#" class="inline-block px-6 py-2 bg-white text-primary font-medium rounded-button !rounded-button hover:bg-primary hover:text-white transition-colors duration-300 whitespace-nowrap">Shop Collection</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 2 -->
+                <div class="group relative overflow-hidden rounded shadow-lg h-64">
+                    <div style="background-image: url('https://public.readdy.ai/ai/img_res/673605bc6fc3adf86f54f95a601a6eb6.jpg');" class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 ease-in-out"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-white mb-2">Apparel</h3>
+                            <a href="#" class="inline-block px-6 py-2 bg-white text-primary font-medium rounded-button !rounded-button hover:bg-primary hover:text-white transition-colors duration-300 whitespace-nowrap">Shop Collection</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 3 -->
+                <div class="group relative overflow-hidden rounded shadow-lg h-64">
+                    <div style="background-image: url('https://public.readdy.ai/ai/img_res/4e6e1fa3eca17e1c82645c5d7c4a4460.jpg');" class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 ease-in-out"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-white mb-2">Trainer/Barn/Club Gear</h3>
+                            <a href="#" class="inline-block px-6 py-2 bg-white text-primary font-medium rounded-button !rounded-button hover:bg-primary hover:text-white transition-colors duration-300 whitespace-nowrap">Shop Collection</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 4 -->
+                <div class="group relative overflow-hidden rounded shadow-lg h-64">
+                    <div style="background-image: url('https://public.readdy.ai/ai/img_res/6de0a1fa07f4effbb8c7cff339e89f77.jpg');" class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 ease-in-out"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-white mb-2">Other Items</h3>
+                            <a href="#" class="inline-block px-6 py-2 bg-white text-primary font-medium rounded-button !rounded-button hover:bg-primary hover:text-white transition-colors duration-300 whitespace-nowrap">Shop Collection</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 5 -->
+                <div class="group relative overflow-hidden rounded shadow-lg h-64">
+                    <div style="background-image: url('https://public.readdy.ai/ai/img_res/ad14c2782ed2c015ea6281622a5072bf.jpg');" class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 ease-in-out"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-white mb-2">Clearance</h3>
+                            <a href="#" class="inline-block px-6 py-2 bg-white text-primary font-medium rounded-button !rounded-button hover:bg-primary hover:text-white transition-colors duration-300 whitespace-nowrap">Shop Collection</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Category 6 -->
+                <div class="group relative overflow-hidden rounded shadow-lg h-64">
+                    <div style="background-image: url('https://public.readdy.ai/ai/img_res/b5dbbec94e249a4580882ba1d9a7aeff.jpg');" class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500 ease-in-out"></div>
+                    <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center">
+                            <h3 class="text-2xl font-bold text-white mb-2">Custom Designs & Embroidery</h3>
+                            <a href="#" class="inline-block px-6 py-2 bg-white text-primary font-medium rounded-button !rounded-button hover:bg-primary hover:text-white transition-colors duration-300 whitespace-nowrap">Shop Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fundraiser Banner -->
+    <section class="py-12 bg-primary bg-opacity-10 rope-border">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-lg shadow-lg p-8 md:p-12 relative overflow-hidden">
+                <div style="background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="%238B4513" stroke-width="2" stroke-dasharray="5,5"/></svg>');" class="absolute inset-0 opacity-10"></div>
+                
+                <div class="relative z-10 flex flex-col md:flex-row items-center">
+                    <div class="md:w-2/3 mb-8 md:mb-0 md:pr-8">
+                        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Ride for Guy Fundraiser</h2>
+                        <p class="text-lg mb-6">Join us in supporting Valerie Vernon through our shop. A portion of every purchase goes directly to this important cause that helps our western community.</p>
+                        <button class="custom-button px-8 py-3 text-lg font-semibold rounded-button !rounded-button whitespace-nowrap">Support Now</button>
+                    </div>
+                    
+                    <div class="md:w-1/3">
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="https://public.readdy.ai/ai/img_res/aa484a84d7cfa424f81db54faaeee69a.jpg" alt="Fundraiser" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Custom Design Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <!-- Left Side - Designs Gallery -->
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold mb-6">Available Designs</h2>
+                    <p class="text-lg mb-8">Browse our collection of hand-drawn designs that can be applied to any of our products. If you don't see a design that fits you, just ask—we're always adding new ones!</p>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <div class="rounded overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <img src="https://public.readdy.ai/ai/img_res/a02eb3512e523e169e12eeaa0dfd38db.jpg" alt="Design 1" class="w-full h-auto">
+                        </div>
+                        <div class="rounded overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <img src="https://public.readdy.ai/ai/img_res/9bd12d249b04b3efb4888d5c324baa1e.jpg" alt="Design 2" class="w-full h-auto">
+                        </div>
+                        <div class="rounded overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <img src="https://public.readdy.ai/ai/img_res/3bf6ee0f686876f89fd1800b1736f2e0.jpg" alt="Design 3" class="w-full h-auto">
+                        </div>
+                        <div class="rounded overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <img src="https://public.readdy.ai/ai/img_res/cc8f3ed2fac21f4120c16ec9f35a3fe2.jpg" alt="Design 4" class="w-full h-auto">
+                        </div>
+                        <div class="rounded overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <img src="https://public.readdy.ai/ai/img_res/ffaf653c2ada385a74eec7018f356905.jpg" alt="Design 5" class="w-full h-auto">
+                        </div>
+                        <div class="rounded overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <img src="https://public.readdy.ai/ai/img_res/e783786599e25b2d2f597f39a1c94490.jpg" alt="Design 6" class="w-full h-auto">
+                        </div>
+                    </div>
+                    
+                    <button class="mt-8 px-6 py-2 border-2 border-primary text-primary font-medium rounded-button !rounded-button hover:bg-primary hover:text-white transition-colors duration-300 whitespace-nowrap">View All Designs</button>
+                </div>
+                
+                <!-- Right Side - Custom Orders -->
+                <div class="md:w-1/2 md:pl-8 border-t md:border-t-0 md:border-l border-gray-200 pt-10 md:pt-0 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6">Custom Orders</h2>
+                    <p class="text-lg mb-6">We offer custom embroidery, woodwork, vinyl signs, and logo printing services to bring your vision to life. Contact us for custom pricing and inquiries.</p>
+                    
+                    <div class="bg-gray-50 rounded-lg p-6 mb-8">
+                        <h3 class="text-xl font-semibold mb-4">Our Custom Services Include:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Custom Embroidery</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Woodwork & Wood Burning</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Vinyl Signs & Decals</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Logo Design & Printing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="w-5 h-5 flex items-center justify-center text-primary mt-1">
+                                    <i class="ri-check-line"></i>
+                                </div>
+                                <span class="ml-2">Heat Transfer Applications</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded custom-input text-sm" placeholder="Your name">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded custom-input text-sm" placeholder="Your email">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium mb-2">Tell us about your project</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded custom-input text-sm" placeholder="Describe what you're looking for..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="custom-button px-6 py-3 font-semibold rounded-button !rounded-button whitespace-nowrap">Request Custom Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Calendar -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Calendar of Events</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+                    <h3 class="text-2xl font-semibold mb-4 md:mb-0">Upcoming Shows & Events</h3>
+                    
+                    <div class="flex space-x-2">
+                        <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-button !rounded-button text-sm font-medium whitespace-nowrap">All Events</button>
+                        <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-button !rounded-button text-sm font-medium whitespace-nowrap">Shows</button>
+                        <button class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-button !rounded-button text-sm font-medium whitespace-nowrap">Markets</button>
+                    </div>
+                </div>
+                
+                <div class="bg-primary bg-opacity-10 border-l-4 border-primary p-4 rounded mb-8">
+                    <p class="text-sm">Flat Hat Rags travels to western and equestrian events nationwide. Please note that shipping may be delayed during travel dates. Contact us for more information.</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <!-- Event 1 -->
+                    <div class="flex flex-col md:flex-row border-b border-gray-200 pb-6">
+                        <div class="md:w-1/6 mb-4 md:mb-0">
+                            <div class="bg-primary bg-opacity-10 text-primary rounded p-3 text-center inline-block">
+                                <span class="block text-sm font-medium">APR</span>
+                                <span class="block text-2xl font-bold">15-17</span>
+                                <span class="block text-sm">2025</span>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-5/6 md:pl-6">
+                            <h4 class="text-xl font-semibold mb-2">Colorado Horse Expo</h4>
+                            <p class="text-gray-600 mb-3">Denver, CO</p>
+                            <p class="mb-4">Join us at the Colorado Horse Expo where we'll be showcasing our latest wild rag designs and custom apparel options. Stop by our booth for special show pricing!</p>
+                            <div class="flex space-x-3">
+                                <button class="px-4 py-1 border border-primary text-primary text-sm rounded-full hover:bg-primary hover:text-white transition-colors whitespace-nowrap">Add to Calendar</button>
+                                <button class="px-4 py-1 border border-gray-300 text-gray-600 text-sm rounded-full hover:bg-gray-100 transition-colors whitespace-nowrap">Event Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 2 -->
+                    <div class="flex flex-col md:flex-row border-b border-gray-200 pb-6">
+                        <div class="md:w-1/6 mb-4 md:mb-0">
+                            <div class="bg-primary bg-opacity-10 text-primary rounded p-3 text-center inline-block">
+                                <span class="block text-sm font-medium">MAY</span>
+                                <span class="block text-2xl font-bold">22-24</span>
+                                <span class="block text-sm">2025</span>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-5/6 md:pl-6">
+                            <h4 class="text-xl font-semibold mb-2">Western Heritage Market</h4>
+                            <p class="text-gray-600 mb-3">Fort Worth, TX</p>
+                            <p class="mb-4">We're heading to Texas for the Western Heritage Market! Come see our expanded collection of custom barn gear and trainer equipment.</p>
+                            <div class="flex space-x-3">
+                                <button class="px-4 py-1 border border-primary text-primary text-sm rounded-full hover:bg-primary hover:text-white transition-colors whitespace-nowrap">Add to Calendar</button>
+                                <button class="px-4 py-1 border border-gray-300 text-gray-600 text-sm rounded-full hover:bg-gray-100 transition-colors whitespace-nowrap">Event Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 3 -->
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/6 mb-4 md:mb-0">
+                            <div class="bg-primary bg-opacity-10 text-primary rounded p-3 text-center inline-block">
+                                <span class="block text-sm font-medium">JUN</span>
+                                <span class="block text-2xl font-bold">10-12</span>
+                                <span class="block text-sm">2025</span>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-5/6 md:pl-6">
+                            <h4 class="text-xl font-semibold mb-2">Loveland Summer Market</h4>
+                            <p class="text-gray-600 mb-3">Loveland, CO</p>
+                            <p class="mb-4">Join us in our hometown for the Loveland Summer Market. We'll be featuring our newest designs and offering on-site custom embroidery services!</p>
+                            <div class="flex space-x-3">
+                                <button class="px-4 py-1 border border-primary text-primary text-sm rounded-full hover:bg-primary hover:text-white transition-colors whitespace-nowrap">Add to Calendar</button>
+                                <button class="px-4 py-1 border border-gray-300 text-gray-600 text-sm rounded-full hover:bg-gray-100 transition-colors whitespace-nowrap">Event Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <button class="custom-button px-6 py-2 font-medium rounded-button !rounded-button whitespace-nowrap">View All Events</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Stay Connected</h2>
+                <p class="text-lg mb-8">Subscribe to our newsletter for exclusive offers, new designs, and event updates.</p>
+                
+                <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-button !rounded-button custom-input text-sm">
+                    <button type="submit" class="custom-button px-8 py-3 font-semibold rounded-r-button !rounded-button whitespace-nowrap">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Column 1 - About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6">About Flat Hat Rags</h3>
+                    <p class="mb-6 text-gray-300">Dedicated to unique, hand-drawn designs and superior handmade craftsmanship. We specialize in custom wild rags, apparel, and home décor that blend western lifestyle with artistic flair.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                            <i class="ri-pinterest-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 - Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Shop All</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Wild Rags</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Apparel</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Custom Orders</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Events Calendar</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 - Contact -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mt-1">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <span class="ml-3 text-gray-300">PO BOX 7575, Loveland, CO 80537</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mt-1">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <span class="ml-3 text-gray-300">(970) 222-1283</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mt-1">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <span class="ml-3 text-gray-300">summerroseranch@hotmail.com</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-medium mb-3">We Accept</h4>
+                        <div class="flex space-x-3">
+                            <div class="w-10 h-6 flex items-center justify-center bg-white rounded">
+                                <i class="ri-visa-fill text-blue-800"></i>
+                            </div>
+                            <div class="w-10 h-6 flex items-center justify-center bg-white rounded">
+                                <i class="ri-mastercard-fill text-red-600"></i>
+                            </div>
+                            <div class="w-10 h-6 flex items-center justify-center bg-white rounded">
+                                <i class="ri-paypal-fill text-blue-600"></i>
+                            </div>
+                            <div class="w-10 h-6 flex items-center justify-center bg-white rounded">
+                                <i class="ri-apple-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 Flat Hat Rags. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('.ri-menu-line').parentElement;
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 hidden';
+            mobileMenu.innerHTML = `
+                <div class="bg-white h-full w-64 max-w-full p-6 transform transition-transform -translate-x-full">
+                    <div class="flex justify-between items-center mb-8">
+                        <span class="text-xl font-['Pacifico'] text-primary">Flat Hat Rags</span>
+                        <button class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-close-line text-2xl"></i>
+                        </button>
+                    </div>
+                    <nav class="flex flex-col space-y-4">
+                        <a href="#" class="py-2 font-medium hover:text-primary transition-colors">Home</a>
+                        <a href="#" class="py-2 font-medium hover:text-primary transition-colors">Shop</a>
+                        <a href="#" class="py-2 font-medium hover:text-primary transition-colors">Designs</a>
+                        <a href="#" class="py-2 font-medium hover:text-primary transition-colors">Custom Orders</a>
+                        <a href="#" class="py-2 font-medium hover:text-primary transition-colors">Events</a>
+                        <a href="#" class="py-2 font-medium hover:text-primary transition-colors">About Us</a>
+                    </nav>
+                </div>
+            `;
+            document.body.appendChild(mobileMenu);
+            
+            const closeButton = mobileMenu.querySelector('.ri-close-line').parentElement;
+            const menuPanel = mobileMenu.querySelector('.bg-white');
+            
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.remove('hidden');
+                setTimeout(() => {
+                    menuPanel.classList.remove('-translate-x-full');
+                }, 10);
+            });
+            
+            closeButton.addEventListener('click', function() {
+                menuPanel.classList.add('-translate-x-full');
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+            });
+            
+            mobileMenu.addEventListener('click', function(e) {
+                if (e.target === mobileMenu) {
+                    menuPanel.classList.add('-translate-x-full');
+                    setTimeout(() => {
+                        mobileMenu.classList.add('hidden');
+                    }, 300);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
